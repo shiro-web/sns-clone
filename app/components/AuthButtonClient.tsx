@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 const AuthButtonClient = ({session}:{session:Session | null}) => {
   const router = useRouter();
-  const supabase = createClientComponentClient();
+  const supabase = createClientComponentClient<Database>();
 
 
     const handleSignIn = async() => {
